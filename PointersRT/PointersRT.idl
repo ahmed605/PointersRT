@@ -1,0 +1,42 @@
+namespace PointersRT
+{
+    enum PointerType
+    {
+        Byte,
+        Int8,
+        Int16,
+        Int32,
+        Int64,
+        UInt16,
+        UInt32,
+        UInt64,
+        Char,
+        Single,
+        Double,
+        Boolean,
+        Guid,
+        Function
+    };
+
+    struct Pointer
+    {
+        UInt64 Value;
+    };
+
+    struct TypedPointer
+    {
+        UInt64 Value;
+        PointerType Type;
+    };
+
+    struct LongPointer
+    {
+        UInt64 Value;
+    };
+
+    struct TypedLongPointer
+    {
+        UInt64 Value;
+        PointerType Type;
+    };
+}

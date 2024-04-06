@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  
+  <PropertyGroup>
+    <TargetFrameworks>netstandard2.0;net6.0-windows10.0.19041.0</TargetFrameworks>
+    <LangVersion>12.0</LangVersion>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Platform>AnyCPU</Platform>
+    <SupportedOSPlatformVersion>10.0.15063.0</SupportedOSPlatformVersion>
+    <ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>None</ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>
+  </PropertyGroup>
+
+  <ItemGroup Condition="$(TargetFramework.StartsWith('netstandard'))">
+    <PackageReference Include="Microsoft.Windows.SDK.Contracts" Version="10.0.22621.3233" />
+    <PackageReference Include="System.Runtime.CompilerServices.Unsafe" Version="6.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Condition="$(TargetFramework.StartsWith('net6'))" Include="..\PointersRT.Projection\PointersRT.Projection.csproj" />
+    <ProjectReference Condition="$(TargetFramework.StartsWith('netstandard'))" Include="..\PointersRT\PointersRT.vcxproj" />
+  </ItemGroup>
+
+  <Import Project="..\PointersRT.Managed.Shared\PointersRT.Managed.Shared.projitems" Label="Shared" />
+
+</Project>
