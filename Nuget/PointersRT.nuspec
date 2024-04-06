@@ -13,7 +13,7 @@
 	<repository type="git" url="https://github.com/ahmed605/PointersRT.git"/>
     <description>This library provides blittable ABI-safe WinRT types that represent various pointer &amp; pointer-related types.</description>
     <releaseNotes>Initial release.</releaseNotes>
-    <tags>Mica UWP WinRT XAML Windows Windows10 Win10 Effects Universal Windows Platform UAP</tags>
+    <tags>WinRT UWP Pointer ABI Interop Native Pointers Blittable Universal Windows Platform UAP</tags>
 	<!--readme>docs\README.md</readme-->
 	<dependencies>
       <group targetFramework="net6.0-windows10.0.19041.0" />
@@ -33,14 +33,14 @@
 	  
 	  <file target="build\native\PointersRT.targets"                          src="PointersRT.targets" />
 	  
-	  <file target="lib\uap10.0\PointersRT.winmd"                             src="..\..\x64\Release\PointersRT\PointersRT.winmd" />
-	  <file target="lib\uap10.0\PointersRT.Managed.dll"                       src="..\..\PointersRT.Managed.Universal\bin\Release\PointersRT.Managed.dll" />
-	  <file target="lib\netstandard2.0\PointersRT.winmd"                      src="..\..\x64\Release\PointersRT\PointersRT.winmd" />
-	  <file target="lib\netstandard2.0\PointersRT.Managed.dll"                src="..\..\PointersRT.Managed\bin\Release\netstandard2.0\PointersRT.Managed.dll" />
-	  <file target="lib\native\PointersRT.winmd"                              src="..\..\x64\Release\PointersRT\PointersRT.winmd" />
-	  <file target="lib\net6.0-windows10.0.19041.0\PointersRT.Managed.dll"    src="..\..\PointersRT.Managed\bin\Release\net6.0-windows10.0.19041.0\PointersRT.Managed.dll" />
-	  <file target="lib\net6.0-windows10.0.19041.0\PointersRT.Projection.dll" src="..\..\PointersRT.Projection\bin\Release\net6.0-windows10.0.19041.0\PointersRT.Projection.dll" />
+	  <file target="lib\uap10.0\PointersRT.winmd"                             src="..\x64\Release\PointersRT\PointersRT.winmd" />
+	  <file target="lib\uap10.0\PointersRT.Managed.dll"                       src="..\PointersRT.Managed.Universal\bin\Release\PointersRT.Managed.dll" />
+	  <file target="lib\netstandard2.0\PointersRT.winmd"                      src="..\x64\Release\PointersRT\PointersRT.winmd" />
+	  <file target="lib\netstandard2.0\PointersRT.Managed.dll"                src="..\PointersRT.Managed\bin\Release\netstandard2.0\PointersRT.Managed.dll" />
+	  <file target="lib\native\PointersRT.winmd"                              src="..\x64\Release\PointersRT\PointersRT.winmd" />
+	  <file target="lib\net6.0-windows10.0.19041.0\PointersRT.Managed.dll"    src="..\PointersRT.Managed\bin\Release\net6.0-windows10.0.19041.0\PointersRT.Managed.dll" />
+	  <file target="lib\net6.0-windows10.0.19041.0\PointersRT.Projection.dll" src="..\PointersRT.Projection\bin\Release\net6.0-windows10.0.19041.0\PointersRT.Projection.dll" />
 	  
-	  <file target="include\PointerHelper.h"                                  src="..\..\PointersRT.Native\PointerHelper.h" />
+	  <file target="include\PointerHelper.h"                                  src="..\PointersRT.Native\PointerHelper.h" />
   </files>
 </package>
